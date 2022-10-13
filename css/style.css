@@ -19,7 +19,7 @@ html {
 }
 
 main {
-    width: 70%;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -47,9 +47,9 @@ header>p {
 
 .card {
     background-color: black;
-    width: calc((100% / 3) - 20px);
-    min-width: 300px;
-    margin: 30px 10px;
+    width: calc((100% / 3) - 2rem);
+    min-width: 350px;
+    margin: 2rem 1rem;
     margin-top: 40px;
     position: relative;
     border-radius: 1rem;
@@ -62,6 +62,8 @@ header>p {
 img {
     width: 120px;
     border-radius: 1rem 0 0 1rem;
+    /*! fix 4px extra at the bottom of img */
+    vertical-align: middle;
 }
 
 
