@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.fl-left {
+    float: left;
+}
+
 html {
     font-family: 'Fredoka', sans-serif;
 }
@@ -14,15 +24,18 @@ main {
 }
 
 header {
-    margin: 2rem 0;
+    padding-top: 1rem;
     text-align: center;
 }
 
 header>h1 {
 color: #E53170;
+font-size: 3rem;
 }
 
-p {
+header>p {
+    font-size: 1.3rem;
+    padding: 2rem 0;
     text-align: center;
 }
 
@@ -30,38 +43,62 @@ p {
 
 .cards{
     color: white;
-    width: calc(100% / 3) - 20px;
 }
 
 .card {
     background-color: black;
-    margin-top: 30px;
-    margin-left: 10px;
-    
+    width: calc((100% / 3) - 20px);
+    min-width: 300px;
+    margin: 30px 10px;
+    margin-top: 40px;
+    position: relative;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 7px 6px 36px -1px rgba(118, 118, 118, 0.75);
+        -webkit-box-shadow: 7px 6px 36px -1px rgba(118, 118, 118, 0.75);
+        -moz-box-shadow: 7px 6px 36px -1px rgba(118, 118, 118, 0.75);
 }
 
 img {
-    width: 100px;
+    width: 120px;
+    border-radius: 1rem 0 0 1rem;
 }
 
+
+/* DESCRIPTION STYLE */
 .description {
     display: inline-block;
-    padding: 0 5px;
-    position: relative;
+    padding: 0 1rem;
 }
 
 .name {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 900;
     position: absolute;
-    
+    top: 15px;
 }
 
-.clearfix:after {
-    content: '';
-    clear: both;
-    display: table;
+.job {
+    position: absolute;
+    bottom: 38px;
+    font-size: 1.2rem;
 }
 
-.fl-left {
-    float: left;
+.email {
+    color: #6DCCF2;
+    position: absolute;
+    bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* animations */
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    box-shadow: 7px 6px 36px -1px rgba(118, 118, 118, 0.41);
+    -webkit-box-shadow: 7px 6px 36px -1px rgba(118, 118, 118, 0.41);
+    -moz-box-shadow: 7px 6px 36px -1px rgba(118, 118, 118, 0.41);
+    transform: scale(1.08);
 }
