@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Fredoka', sans-serif;
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+header {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+header>h1 {
+color: #E53170;
+}
+
+p {
+    text-align: center;
+}
+
+/* card */
+
+.cards{
+    color: white;
+    width: calc(100% / 3) - 20px;
+}
+
+.card {
+    background-color: black;
+    margin-top: 30px;
+    margin-left: 10px;
+    
+}
+
+img {
+    width: 100px;
+}
+
+.description {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.name {
+    font-size: 1.2rem;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.fl-left {
+    float: left;
+}
