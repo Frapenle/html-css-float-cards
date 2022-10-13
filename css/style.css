@@ -47,10 +47,13 @@ img {
 .description {
     display: inline-block;
     padding: 0 5px;
+    position: relative;
 }
 
 .name {
     font-size: 1.2rem;
+    position: absolute;
+    
 }
 
 .clearfix:after {
